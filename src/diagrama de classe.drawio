@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="27.1.4">
+  <diagram id="uJ2V32dfhUwQT86H3XTm" name="Página-1">
+    <mxGraphModel dx="872" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-1" value="Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="231" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-2" value="~ id : int&lt;br&gt;&lt;div&gt;# usuario : String&lt;/div&gt;&lt;div&gt;# senha : String&lt;/div&gt;&lt;div&gt;- nome : String&lt;/div&gt;&lt;div&gt;- celular : String&lt;/div&gt;&lt;div&gt;- email : String&lt;/div&gt;&lt;div&gt;- cnh : String&lt;/div&gt;&lt;div&gt;- data_nascimento : Date&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ adicionar_noticia()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="fIgm_cvgeeC9kAqr-fVg-1">
+          <mxGeometry y="50" width="231" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-3" value="Adiministrador" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="231" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-4" value="+ adicionar_cliente()&lt;br&gt;+ adicionar_exportacao(cliente Cliente):booean" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="fIgm_cvgeeC9kAqr-fVg-3">
+          <mxGeometry y="50" width="231" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-6" value="Exportacao" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="430" width="230" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-7" value="~ id : int&lt;br&gt;- empresa_importadora : String&lt;br&gt;&lt;div&gt;- data_de_validade : Date&lt;/div&gt;&lt;div&gt;- data_inicio_da_importacao : Date&lt;/div&gt;&lt;div&gt;- data_prevista_da_importacao : Date&lt;/div&gt;&lt;div&gt;- peso : double&lt;/div&gt;&lt;div&gt;- tipo_de_carne : String&lt;/div&gt;&lt;div&gt;- quantidade_de_pecas : int&lt;/div&gt;&lt;div&gt;- temperatura : double&lt;/div&gt;&lt;div&gt;- status_concluido : boolean&lt;/div&gt;&lt;div&gt;- camera : [ ]&lt;/div&gt;&lt;div&gt;- usuario : Usuario&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="fIgm_cvgeeC9kAqr-fVg-6">
+          <mxGeometry y="50" width="230" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-8" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.341;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fIgm_cvgeeC9kAqr-fVg-1" target="fIgm_cvgeeC9kAqr-fVg-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="330" y="760" as="sourcePoint" />
+            <mxPoint x="430" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fIgm_cvgeeC9kAqr-fVg-11" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=14;fontColor=default;fontStyle=0;horizontal=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fIgm_cvgeeC9kAqr-fVg-4" target="fIgm_cvgeeC9kAqr-fVg-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="421" y="910" as="sourcePoint" />
+            <mxPoint x="471" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="551" y="960" />
+              <mxPoint x="371" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
